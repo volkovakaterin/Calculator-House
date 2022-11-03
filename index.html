@@ -72,7 +72,10 @@
             </div>
             <form class="calculator__block-form" action="#">
                 <div class="calculator__block-wrapper block_parameters">
-                    <p class="calculator__block-text block-text">Размер блока</p>
+                    <p class="calculator__block-text block-text">
+                        <span >Размер блока</span>
+                        <span class ="block-mark">Марка блока</span>
+                    </p>                    
                     <div class="calculator__block-flex">
                         <div class="calculator__block-select">
                             <select name="block-size" id="stage1-block-size" class="block-text">
@@ -107,7 +110,7 @@
                     </div>
                 </div>
                 <div class="calculator__block-wrapper">
-                    <p class="block-text" for="">Запас на обрезки (%)</p>
+                    <p class="block-text stock-cuttings" for="">Запас на обрезки (%)</p>
                     <div class="calculator__block-number">
                         <input type="number" name="block-reserve" id="stage1-block-reserve">
                     </div>
@@ -131,13 +134,13 @@
             <div class="calculator__block-heading">
                 <h3 class="block-heading">Введите размер стен</h3>
             </div>
-            <form action="#" class="calculator__block-form">
+            <form action="#" class="calculator__block-form wall-size">
                 <ul class="calculator__block-form-list menu-title">
                 </ul>
                 <div class="calculator__block-wrapper">
                     <div class="calculator__block-flex">
                         <div class="calculator__block-number">
-                            <p class="block-text" for="">Общая длина стем (м)</p>
+                            <p class="block-text" for="">Общая длина стен (м)</p>
                             <input type="number" name="stage1-wallwidth" id="stage1-wallwidth">
                         </div>
                         <div class="calculator__block-select">
@@ -1555,6 +1558,7 @@
 
     <footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js" integrity="sha512-ToRWKKOvhBSS8EtqSflysM/S7v9bB9V0X3B1+E7xo7XZBEZCPL3VX5SFIp8zxY19r7Sz0svqQVbAOx+QcLQSAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
     <script defer src="js/app.min.js"></script>
 </footer>
 </body>
