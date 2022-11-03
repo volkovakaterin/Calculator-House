@@ -125,6 +125,12 @@ form select {
 }
 
 .calculator__block-imgwrapper button.calculator__block-imgwrapperbtnleft::before {
+  content: url("../../img/button_l_gray.png");
+  width: 20px;
+  height: 200px;
+}
+
+.calculator__block-imgwrapper button.calculator__block-imgwrapperbtnleft:hover::before {
   content: url("../../img/button_l_active.png");
   width: 20px;
   height: 200px;
@@ -135,6 +141,12 @@ form select {
 }
 
 .calculator__block-imgwrapper button.calculator__block-imgwrapperbtnright::before {
+  content: url("../../img/button_r_gray.png");
+  width: 20px;
+  height: 200px;
+}
+
+.calculator__block-imgwrapper button.calculator__block-imgwrapperbtnright:hover::before {
   content: url("../../img/button_r_active_.png");
   width: 20px;
   height: 200px;
@@ -144,12 +156,13 @@ form select {
   visibility: visible;
 }
 
+
+
 .calculator__block-imgwrapper .calculator__block-imgbox {
   display: none;
-  
- /* opacity: 75%; */
 }
 
+  
 .calculator__block-imgwrapper .calculator__block-imgbox.active {
   width: 418px;
   height: 240px;
@@ -159,6 +172,26 @@ form select {
   align-items: center;
   box-shadow: 0px 0px 18px 2px rgba(34, 60, 80, 0.18);
   opacity: 100%;
+} 
+
+.calculator__block-imgwrapper .calculator__block-imgbox.default {
+  width: 418px;
+  height: 240px;
+  padding: 10px 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+}
+
+.calculator__block-imgwrapper .calculator__block-imgbox.blur {
+  width: 418px;
+  height: 240px;
+  padding: 10px 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 75%;
 }
 
 .calculator__block-imgwrapper img {
@@ -764,6 +797,10 @@ a {
   font-weight: 400;
   font-size: 13px;
   color: #44424b;
+}
+
+.block-text .select-default {
+  color: #8c8b8f;
 }
 
 .block-text-small {
@@ -1439,4 +1476,14 @@ a {
 
 .hide_picture {
   display: none;
+}
+
+input, select {
+  outline: none; 
+border: 1px solid #35414c;
+border-radius: 0px !important;
+}
+
+input:focus, select:focus {
+  border: 1px solid #35414c;
 }
