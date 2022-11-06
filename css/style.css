@@ -21,7 +21,7 @@ button {
 }
 
 .calculator__wrapper {
-  padding-top: 28px;
+  padding-top: 25px;
   padding-bottom: 30px;
 }
 
@@ -37,7 +37,8 @@ button {
   flex-direction: column;
 }
 
-.calculator__stage-confirmbtn {
+.calculator__stage-confirmbtn,
+.calculator__stage-skipbtn {
   background: none;
   border: 1px solid #9d9b9c;
   color: #9d9b9c;
@@ -48,12 +49,14 @@ button {
   margin-bottom: 20px;
 }
 
-.calculator__stage-confirmbtn:hover {
+.calculator__stage-confirmbtn:hover,
+.calculator__stage-skipbtn:hover {
   background: #35414c;
   color: white;
 }
 
-.calculator__stage-confirmbtn:active {
+.calculator__stage-confirmbtn:active,
+.calculator__stage-skipbtn:active {
   background: #f75445;
   color: white;
 }
@@ -63,10 +66,11 @@ button {
   align-items: center;
   justify-content: center;
   margin-bottom: 35px;
+  margin-left: 5px;
 }
 
 .calculator__heading img {
-  margin-right: 16px;
+  margin-right: 14px;
 }
 
 .no-webp form select {
@@ -88,7 +92,7 @@ form select {
 .calculator__block {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .calculator__block-formwrapper .calculator__block-form .calculator__block-form-list li {
@@ -109,9 +113,9 @@ form select {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 50%; */
+  width: 50%;
   margin-top: 36px;
-  padding: 0 69px;
+  padding: 0;
 }
 
 .calculator__block-imgwrapper button {
@@ -166,7 +170,7 @@ form select {
 .calculator__block-imgwrapper .calculator__block-imgbox.active {
   width: 418px;
   height: 240px;
-  padding: 10px 45px;
+  padding: 10px 0 10px 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +181,7 @@ form select {
 .calculator__block-imgwrapper .calculator__block-imgbox.default {
   width: 418px;
   height: 240px;
-  padding: 10px 45px;
+  padding: 10px 0 10px 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,7 +191,7 @@ form select {
 .calculator__block-imgwrapper .calculator__block-imgbox.blur {
   width: 418px;
   height: 240px;
-  padding: 10px 45px;
+  padding: 10px 0 10px 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,16 +215,20 @@ form select {
   margin-bottom: 5px;
 }
 
+.calculator__block-trapezoidwindows li {
+  margin-bottom: 6px;
+}
+
 .calculator__block-additionally .calculator__block-additionallyheading {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .calculator__block-additionally .calculator__block-additionallyheading button {
   position: relative;
   border: none;
   background: none;
-  font-weight: bold;
+  /* font-weight: bold; */
   cursor: pointer;
 }
 
@@ -230,11 +238,11 @@ form select {
 
 .calculator__block-additionally .calculator__block-additionallyheading::before {
   content: "";
-  margin-right: 50px;
+  margin-right: 47px;
 }
 
 .calculator__block-additionally .calculator__block-additionallyheading::after {
-  margin-left: 18px;
+  margin-left: 20px;
   content: url("../img/arrow-up.png");
   transform: rotate(180deg);
 }
@@ -298,7 +306,7 @@ form select {
 }
 
 .calculator__block-wallheight .calculator__block-flex {
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .calculator__block-wallheight .calculator__block-flex>*:not(:last-child) {
@@ -363,7 +371,11 @@ form select {
 }
 
 .calculator__block-fronts .calculator__block-flex>*:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 35px;
+}
+
+#stage1-front-quantity, #stage1-doorway-quantity {
+  width: 117px;
 }
 
 .calculator__block-fronts .calculator__block-formsubmit button {
@@ -396,7 +408,7 @@ form select {
 }
 
 .calculator__block-trapezoidwindows .calculator__block-formsubmit button {
-  width: 160px;
+  width: 165px;
 }
 
 .calculator__block-circlewindows {
@@ -457,8 +469,18 @@ form select {
   margin-bottom: 10px;
 }
 
+.calculator__block-fronts .calculator__block-heading {
+  margin-bottom: 6px;
+}
+
 .calculator__block-heading h3 {
   position: relative;
+}
+
+.calculator__block-doorways .calculator__block-heading h3, 
+.calculator__block-trapezoidwindows .calculator__block-heading h3{
+  display: flex;
+  align-items: center;
 }
 
 .calculator__block-heading h3::before {
@@ -468,6 +490,10 @@ form select {
   width: 40px;
   height: 2px;
   background-color: #d75547;
+}
+
+.calculator__block-fronts h3::before{
+  bottom: 3px;
 }
 
 .calculator__block-heading::before {
@@ -489,6 +515,16 @@ form select {
 .wall-size {
   margin-left: 50px;
 }
+
+.calculator__block-fronts .calculator__block-form,
+.calculator__block-trapezoidwindows .calculator__block-form {
+  margin-left: 48px;
+}
+
+.wall-size .calculator__block-form-list {
+  margin-bottom: 2px;
+}
+
 
 .calculator__block-form p.block-text,
 .calculator__block-form p.menu-title {
@@ -553,7 +589,7 @@ form select {
 }
 
 .calculator__block-select span {
-  margin-top: 7px;
+  margin-top: 8px;
   display: flex;
   align-items: flex-start;
   width: 100%;
@@ -575,7 +611,7 @@ form select {
 
 .calculator__block-form .block_position {
   margin-top: 30px;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 }
 
 .calculator__block-radio {
@@ -592,11 +628,15 @@ form select {
   align-items: center;
 }
 
-.calculator__block-radio-section:not(:last-child) {
-  margin-right: 27px;
+#stage1-block-align-vert, #stage1-block-align-hor {
+  margin-right: 14px;
 }
 
-.calculator__block-radio-section input {
+.calculator__block-radio-section:not(:last-child) {
+  margin-right: 29px;
+}
+
+/* .calculator__block-radio-section input {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -620,6 +660,10 @@ form select {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+} */
+
+.calculator__block-form p.stock-cuttings {
+  margin-bottom: 8px;
 }
 
 .calculator__block-number input {
@@ -627,6 +671,14 @@ form select {
   width: 165px;
   font-size: 12px;
   border: 1px solid #b9b9b9;
+}
+
+#stage1-trapezoidwindows-width, #stage1-trapezoidwindows-height-first, #stage1-trapezoidwindows-height-second {
+  width: 99px;
+}
+
+#stage1-trapezoidwindows-quantity {
+  width: 117px;
 }
 
 .calculator__block-checkbox {
@@ -862,7 +914,7 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .calculator__menu::after {
@@ -872,6 +924,10 @@ a {
   content: "";
   border: 1px solid #e0dede;
   z-index: -2;
+}
+
+.calculator__menu .calculator__menu-item.first {
+  margin-left: 40px;
 }
 
 .calculator__menu .calculator__menu-item.first::after {
@@ -889,10 +945,14 @@ a {
   visibility: visible;
 }
 
+.calculator__menu .calculator__menu-item.second {
+  margin-left: 110px;
+}
+
 .calculator__menu .calculator__menu-item.second::after {
   visibility: hidden;
   position: absolute;
-  width: 40%;
+  width: 37%;
   bottom: 14px;
   left: 0;
   content: "";
@@ -902,6 +962,10 @@ a {
 
 .calculator__menu .calculator__menu-item.second.active::after {
   visibility: visible;
+}
+
+.calculator__menu .calculator__menu-item.third {
+  margin-left: 110px;
 }
 
 .calculator__menu .calculator__menu-item.third::after {
@@ -917,6 +981,10 @@ a {
 
 .calculator__menu .calculator__menu-item.third.active::after {
   visibility: visible;
+}
+
+.calculator__menu .calculator__menu-item.fourth {
+  margin-left: 110px;
 }
 
 .calculator__menu .calculator__menu-item.fourth::after {
@@ -1399,12 +1467,26 @@ a {
 }
 
 .webp .calculator__block-doorways .calculator__block-heading::before {
+  margin-right: 19px;
   width: 29px;
   height: 24px;
   background-image: url(../img/window.webp);
 }
 
+.calculator__block-doorways .calculator__block-form {
+  margin-left: 48px;
+}
+
+.calculator__block-doorways .menu-title {
+  font-size: 16px;
+}
+
+.calculator__block-fronts .menu-title{
+  margin-bottom: 3px;
+}
+
 .webp .calculator__block-fronts .calculator__block-heading::before {
+  margin-right: 20px;
   width: 28px;
   height: 24px;
   background-image: url(../img/joist.webp);
@@ -1486,4 +1568,29 @@ border-radius: 0px !important;
 
 input:focus, select:focus {
   border: 1px solid #35414c;
+}
+
+.hide_btn {
+  display: none;
+}
+
+.calculator__block-select .select_size {
+  height: 36px;
+}
+
+.calculator__block-select .select_size,
+.calculator__block-select .select_size option {
+  font-size: 10px;
+}
+
+#stage1-block-type {
+  width: 128px;
+}
+
+.wallsize__block-heading {
+  margin-bottom: 8px;
+}
+
+.trapezoidWindows-jumper_label {
+  width: 67px;
 }
