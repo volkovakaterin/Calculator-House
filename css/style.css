@@ -32,7 +32,7 @@ button {
   padding: 44px 19px;
 }
 
-.stage2_section .calculator__stage {
+.stage2_section, .stage3_section  {
   padding: 44px 19px 27px 19px;
 }
 
@@ -54,24 +54,39 @@ button {
   margin-left: 946px;
 }
 
-.stage2_section .calculator__stage-backbtn{
-  margin-left: 772px;
-  margin-top: 0;
+.stage2_section .calculator__stage-backbtn,
+.stage3_section .calculator__stage-backbtn{
+  display: flex;
+    margin-left: 772px;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
 }
 
-.stage2_section .calculator__stage-confirmbtn{
+.calculator__stage-skipbtn {
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
+
+.stage2_section .calculator__stage-confirmbtn,
+.stage3_section .calculator__stage-confirmbtn{
   margin-left: 30px;
   margin-top: 0;
 }
 
 .calculator__stage-confirmbtn:hover,
-.calculator__stage-skipbtn:hover {
+.calculator__stage-skipbtn:hover,
+.stage2_section .calculator__stage-backbtn:hover,
+.stage3_section .calculator__stage-backbtn:hover,{
   background: #35414c;
   color: white;
 }
 
 .calculator__stage-confirmbtn:active,
-.calculator__stage-skipbtn:active {
+.calculator__stage-skipbtn:active,
+.stage2_section .calculator__stage-backbtn:active,
+.stage3_section .calculator__stage-backbtn:active {
   background: #f75445;
   color: white;
 }
@@ -110,7 +125,8 @@ form select {
   margin-bottom: 33px;
 }
 
-.stage2_section .calculator__block-masonrygrid {
+.stage2_section .calculator__block-masonrygrid,
+.stage3_section .calculator__block-masonrygrid {
   margin-bottom: 70px;
 }
 
@@ -149,11 +165,16 @@ form select {
   margin-bottom: 15px;
 }
 
+.stage3_section .calculator__block-bgimg {
+  margin-bottom: 18px;
+}
+
 .calculator__block-masonrygrid .calculator__block-imgwrapper {
   margin-top: 25px;
 }
 
-.stage2_section .calculator__block-masonrygrid .calculator__block-imgwrapper {
+.stage2_section .calculator__block-masonrygrid .calculator__block-imgwrapper,
+.stage3_section .calculator__block-masonrygrid .calculator__block-imgwrapper {
   margin-top: 40px;
 }
 
@@ -439,7 +460,7 @@ padding: 10px 35px 10px 55px;
   margin-right: 35px;
 }
 
-#stage1-front-quantity, #stage1-doorway-quantity, #stage1-circlewindows-quantity, #stage2-doorway-quantity {
+#stage1-front-quantity, #stage1-doorway-quantity, #stage1-circlewindows-quantity, #stage2-doorway-quantity, #stage3-doorway-quantity {
   width: 117px;
 }
 
@@ -510,6 +531,10 @@ padding: 10px 35px 10px 55px;
 
 .stage2_section .calculator__block-glue {
   margin-bottom: 23px;
+}
+
+.stage3_section .calculator__block-glue {
+  margin-bottom: 24px;
 }
 
 .no-webp .calculator__block-glue .calculator__block-heading::before {
@@ -594,13 +619,18 @@ bottom: 6px;
   margin-bottom: 7px;
 }
 
+.stage3_section .calculator__block-glue .calculator__block-heading {
+  margin-bottom: 7px;
+}
+
 .calculator__block-form {
   display: flex;
   flex-direction: column;
   margin-left: 59px;
 }
 
-.stage2_section .calculator__block-wallheight .calculator__block-form {
+.stage2_section .calculator__block-wallheight .calculator__block-form,
+.stage3_section .calculator__block-wallheight .calculator__block-form {
 margin-left: 49px;
 }
 
@@ -712,7 +742,8 @@ margin-left: 49px;
   margin-bottom: 14px;
 }
 
-.stage2_section .calculator__block-form .block_position {
+.stage2_section .calculator__block-form .block_position,
+.stage3_section .calculator__block-form .block_position{
   margin-top: 13px;
 }
 
@@ -730,7 +761,8 @@ margin-left: 49px;
   align-items: center;
 }
 
-#stage1-block-align-vert, #stage1-block-align-hor, #stage2-block-align-vert, #stage2-block-align-hor {
+#stage1-block-align-vert, #stage1-block-align-hor, #stage2-block-align-vert, #stage2-block-align-hor, 
+#stage3-block-align-vert, #stage3-block-align-hor {
   margin-right: 14px;
 }
 
