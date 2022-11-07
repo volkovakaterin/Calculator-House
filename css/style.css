@@ -21,7 +21,7 @@ button {
 }
 
 .calculator__wrapper {
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 30px;
 }
 
@@ -36,6 +36,10 @@ button {
   padding: 44px 19px 27px 19px;
 }
 
+.stage4_section {
+  padding: 30px 19px 40px 19px;
+}
+
 .calculator__stage:target {
   display: flex;
   flex-direction: column;
@@ -43,7 +47,8 @@ button {
 
 .calculator__stage-confirmbtn,
 .calculator__stage-skipbtn, 
-.calculator__stage-backbtn {
+.calculator__stage-backbtn,
+.calculator__stage-sendmbtn {
   background: none;
   border: 1px solid #9d9b9c;
   color: #9d9b9c;
@@ -63,6 +68,19 @@ button {
     justify-content: center;
 }
 
+.stage4_section .calculator__stage-backbtn {
+  display: flex;
+    margin-left: 495px;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage4_section .calculator__stage-confirmbtn,
+.stage4_section .calculator__stage-sendmbtn {
+  width: 196px;
+}
+
 .calculator__stage-skipbtn {
   display: flex;
   align-items: center;
@@ -70,7 +88,9 @@ button {
 }
 
 .stage2_section .calculator__stage-confirmbtn,
-.stage3_section .calculator__stage-confirmbtn{
+.stage3_section .calculator__stage-confirmbtn,
+.stage4_section .calculator__stage-confirmbtn,
+.stage4_section .calculator__stage-sendmbtn{
   margin-left: 30px;
   margin-top: 0;
 }
@@ -78,7 +98,10 @@ button {
 .calculator__stage-confirmbtn:hover,
 .calculator__stage-skipbtn:hover,
 .stage2_section .calculator__stage-backbtn:hover,
-.stage3_section .calculator__stage-backbtn:hover,{
+.stage3_section .calculator__stage-backbtn:hover,
+.stage4_section .calculator__stage-backbtn:hover,
+.stage4_section .calculator__stage-confirmbtn:hover,
+.stage4_section .calculator__stage-sendmbtn:hover{
   background: #35414c;
   color: white;
 }
@@ -86,7 +109,10 @@ button {
 .calculator__stage-confirmbtn:active,
 .calculator__stage-skipbtn:active,
 .stage2_section .calculator__stage-backbtn:active,
-.stage3_section .calculator__stage-backbtn:active {
+.stage3_section .calculator__stage-backbtn:active,
+.stage4_section .calculator__stage-backbtn:active,
+.stage4_section .calculator__stage-confirmbtn:active,
+.stage4_section .calculator__stage-sendmbtn:active{
   background: #f75445;
   color: white;
 }
@@ -138,10 +164,6 @@ form select {
   margin-left: 6px;
   color: #663b36;
   cursor: pointer;
-}
-
-.calculator__block-formwrapper {
-  /* width: 50%; */
 }
 
 .calculator__block-imgwrapper {
@@ -382,6 +404,10 @@ padding: 10px 35px 10px 55px;
   padding: 10px 15px;
 }
 
+.calculator__block-doorways .calculator__block-checkbox:not(:last-child) label {
+  width: 70px;
+}
+
 .calculator__block-wallheight .calculator__block-checkbox {
   width: 113px;
   transform: translateY(12px);
@@ -420,7 +446,7 @@ padding: 10px 35px 10px 55px;
 }
 
 .calculator__block-doorways .calculator__block-flex>*:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 35px;
 }
 
 .calculator__block-doorways .calculator__block-number {
@@ -464,7 +490,8 @@ padding: 10px 35px 10px 55px;
   width: 117px;
 }
 
-.calculator__block-fronts .calculator__block-formsubmit button {
+.calculator__block-fronts .calculator__block-formsubmit button,
+.calculator__block-doorways .calculator__block-formsubmit button {
   width: 165px;
 }
 
@@ -903,6 +930,10 @@ a {
   color: #44424b;
 }
 
+.header__paragraph .page-paragpaph:last-child {
+line-height: 140%;
+}
+
 .menu-title {
   font-family: Segoe UI Semibold;
   font-weight: 400;
@@ -922,6 +953,7 @@ a {
   font-weight: 400;
   font-size: 12px;
   color: #44424b;
+  letter-spacing: 0.3px;
 }
 
 .menu-number {
@@ -1105,7 +1137,7 @@ a {
 .calculator__menu .calculator__menu-item.third::after {
   visibility: hidden;
   position: absolute;
-  width: 65%;
+  width: 63%;
   bottom: 14px;
   left: 0;
   content: "";
@@ -1124,7 +1156,7 @@ a {
 .calculator__menu .calculator__menu-item.fourth::after {
   visibility: hidden;
   position: absolute;
-  width: 90%;
+  width: 89%;
   bottom: 14px;
   left: 0;
   content: "";
@@ -1159,7 +1191,7 @@ a {
 .calculator__stage#stage4 .export__menu {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .calculator__stage#stage4 .export__menu-wrapper {
@@ -1223,7 +1255,7 @@ a {
 .calculator__stage#stage4 .export__menu>#stage4-databtn:not(#stage4-detalcalcbtn),
 .calculator__stage#stage4 .export__menu #stage4-shortcalcbtn:not(#stage4-detalcalcbtn),
 .calculator__stage#stage4 .export__menu #stage4-detalcalcbtn:not(#stage4-detalcalcbtn) {
-  margin-right: 40px;
+  margin-right: 62px;
 }
 
 .calculator__stage#stage4 .export__menu>#stage4-databtn#stage4-databtn::before,
@@ -1245,7 +1277,7 @@ a {
   align-items: center;
   font-size: 33px;
   font-family: Arial;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .calculator__stage#stage4 .export__menu>#stage4-databtn.active,
@@ -1259,21 +1291,45 @@ a {
   padding-top: 20px;
 }
 
+.calculator__stage#stage4 .export__block-blockparams,
+.calculator__stage#stage4 .export__block-circlewindows {
+  padding-top: 10px;
+}
+
+.calculator__stage#stage4 .export__block-wallheight {
+  padding-top: 23px;
+}
+
+.calculator__stage#stage4 .export__block-foamglue {
+  padding-top: 0px;
+}
+
+/* .calculator__stage#stage4 .export__block-doorways {
+  padding-top: 32px;
+} */
+
+.calculator__stage#stage4 .export__block-trapezoidwindows {
+  padding-top: 0px;
+}
+
 .calculator__stage#stage4 .export__block .export__block-heading {
   display: flex;
   margin-bottom: 12px;
 }
 
+.calculator__stage#stage4 .export__block-wallheight .export__block-heading {
+  margin-bottom: 16px;
+}
+
 .calculator__stage#stage4 .export__block-tableicons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 40%;
-  margin-left: 380px;
-  margin-bottom: 20px;
+  margin-left: 377px;
+  margin-bottom: 0;
 }
 
 .calculator__stage#stage4 .export__block-tableicons-element {
+  margin-right: 75px;
   width: 100px;
   height: 80px;
   text-align: center;
@@ -1283,21 +1339,94 @@ a {
 }
 
 .calculator__stage#stage4 .export__block-tableicons-element img {
+  margin-bottom: 5px;
   width: 40px;
-  height: 40px;
+  height: 30px;
 }
 
 .calculator__stage#stage4 .export__block-tablewrapper {
-  width: 75%;
+  width: 89%;
 }
 
 .calculator__stage#stage4 .export__block-imgwrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
   width: 25%;
+  max-height: 128px;
+}
+
+.calculator__stage#stage4 .export__block-glue .export__block-imgwrapper {
+  max-height: 120px;
+}
+
+.calculator__stage#stage4 .export__block-wallheight .export__block-imgwrapper {
+  margin-top: 35px;
+}
+
+.calculator__stage#stage4 .export__block-doorways .export__block-imgwrapper,
+.calculator__stage#stage4 .export__block-masonrygrid .export__block-imgwrapper  {
+margin-top: 40px;
+}
+
+.calculator__stage#stage4 .export__block-fronts .export__block-imgwrapper {
+  margin-top: 37px;
+}
+
+.calculator__stage#stage4 .export__block-trapezoidwindows .export__block-imgwrapper,
+.calculator__stage#stage4 .export__block-circlewindows .export__block-imgwrapper,
+.calculator__stage#stage4 .export__block-glue .export__block-imgwrapper {
+  margin-top: 36px;
+}
+
+.calculator__stage#stage4 .export__block-img {
+  max-width: 90%;
+  max-height: 100%;
+}
+
+.calculator__stage#stage4 .export__block-wallheight .export__block-img {
+  max-width: 93%;
+   max-height: 93%;
+}
+
+.calculator__stage#stage4 .export__block-doorways .export__block-img,
+.calculator__stage#stage4 .export__block-fronts .export__block-img {
+  max-width: 80%;
+   max-height: 80%;
+}
+
+.calculator__stage#stage4 .export__block-trapezoidwindows .export__block-img,
+.calculator__stage#stage4 .export__block-circlewindows .export__block-img,
+.calculator__stage#stage4 .export__block-masonrygrid .export__block-img {
+  max-width: 85%;
+    max-height: 85%;
+}
+
+.calculator__stage#stage4 .export__block-glue .export__block-img {
+  max-width: 90%;
+   max-height: 90%;
 }
 
 .calculator__stage#stage4 .export__block-table {
   margin-left: 48px;
+  padding-bottom: 23px;
+}
+
+.calculator__stage#stage4 .export__block-doorways .export__block-table {
+  padding-bottom: 8px;
+}
+
+.calculator__stage#stage4 .export__block-fronts .export__block-table, 
+.calculator__stage#stage4 .export__block-foamglue .export__block-table {
   padding-bottom: 20px;
+}
+
+.calculator__stage#stage4 .export__block-trapezoidwindows .export__block-table {
+  padding-bottom: 19px;
+}
+
+.calculator__stage#stage4 .export__block-circlewindows .export__block-table {
+  padding-bottom: 21px;
 }
 
 .calculator__stage#stage4 .export__block-table table {
@@ -1309,7 +1438,7 @@ a {
 }
 
 .calculator__stage#stage4 .export__block-table table td {
-  padding: 6px;
+  padding: 7px 10px;
 }
 
 .calculator__stage#stage4 .export__block-table table tr>td:first-child {
@@ -1319,6 +1448,19 @@ a {
 .calculator__stage#stage4 .export__block-table table tr>td:not(:first-child) {
   width: 170px;
   text-align: right;
+}
+
+.calculator__stage#stage4 .export__block-glue table tr>td:not(:first-child),
+.calculator__stage#stage4 .export__block-foamglue table tr>td:not(:first-child),
+.calculator__stage#stage4 .export__block-masonrygrid table tr>td:not(:first-child) {
+  padding: 7px 28px 7px 10px;
+}
+
+.calculator__stage#stage4 .export__block-doorways table tr>td:not(:first-child),
+.calculator__stage#stage4 .export__block-fronts table tr>td:not(:first-child),
+.calculator__stage#stage4 .export__block-circlewindows table tr>td:not(:first-child),
+.calculator__stage#stage4 .export__block-trapezoidwindows table tr>td:not(:first-child) {
+  font-size: 14px;
 }
 
 .no-webp .calculator__stage#stage4 .export-data .export__block-blockparams .export__block-heading::before {
@@ -1362,13 +1504,22 @@ a {
   padding: none;
 }
 
-.calculator__stage#stage4 .export-data .export__block-heading {
+.calculator__stage#stage4 .export__block-blockparams .export__block-heading {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .calculator__stage#stage4 .export-data .export__block-heading h3 {
   position: relative;
+}
+
+.calculator__stage#stage4 .export__block-blockparams .export__block-heading h3,
+.calculator__stage#stage4 .export__block-wallheight .export__block-heading h3,
+.calculator__stage#stage4 .export__block-fronts .export__block-heading h3,
+.calculator__stage#stage4 .export__block-trapezoidwindows .export__block-heading h3,
+.calculator__stage#stage4 .export__block-foamglue .export__block-heading h3{
+  display: flex;
+    align-items: center;
 }
 
 .calculator__stage#stage4 .export-data .export__block-heading h3::before {
@@ -1378,6 +1529,14 @@ a {
   width: 40px;
   height: 2px;
   background-color: #d75547;
+}
+
+.calculator__stage#stage4 .export__block-blockparams  .export__block-heading h3::before {
+  bottom: 6px;
+}
+
+.calculator__stage#stage4 .export__block-foamglue  .export__block-heading h3::before {
+  bottom: 5px;
 }
 
 .calculator__stage#stage4 .export-data .export__block-heading::before {
@@ -1670,6 +1829,9 @@ a {
 }
 
 .webp .calculator__stage#stage4 .export-data .export__block-blockparams .export__block-heading::before {
+  margin-right: 17px;
+  width: 32px;
+  height: 32px;
   background-image: url(../img/brick.webp);
 }
 
@@ -1678,30 +1840,51 @@ a {
 }
 
 .webp .calculator__stage#stage4 .export-data .export__block-doorways .export__block-heading::before {
+  margin-right: 20px;
+  width: 30px;
+  height: 25px;
   background-image: url(../img/window.webp);
 }
 
 .webp .calculator__stage#stage4 .export-data .export__block-fronts .export__block-heading::before {
+  margin-right: 19px;
+  width: 30px;
+    height: 25px;
   background-image: url(../img/joist.webp);
 }
 
 .webp .calculator__stage#stage4 .export-data .export__block-trapezoidwindows .export__block-heading::before {
+  margin-right: 19px;
+    width: 30px;
+    height: 25px;
   background-image: url(../img/trapwindows.webp);
 }
 
 .webp .calculator__stage#stage4 .export-data .export__block-circlewindows .export__block-heading::before {
+  margin-right: 19px;
+    width: 30px;
+    height: 25px;
   background-image: url(../img/circlewindows.webp);
 }
 
 .webp .calculator__stage#stage4 .export-data .export__block-glue .export__block-heading::before {
+  margin-right: 19px;
+  width: 30px;
+  height: 25px;
   background-image: url(../img/trowel.webp);
 }
 
 .webp .calculator__stage#stage4 .export-data .export__block-foamglue .export__block-heading::before {
+  margin-right: 13px;
+  width: 35px;
+    height: 35px;
   background-image: url(../img/foamglue.webp);
 }
 
 .webp .calculator__stage#stage4 .export-data .export__block-masonrygrid .export__block-heading::before {
+  margin-right: 18px;
+    width: 30px;
+    height: 25px;
   background-image: url(../img/grid.webp);
 }
 
@@ -1746,4 +1929,8 @@ input:focus, select:focus {
 
 .buttons_transition {
   display: flex;
+}
+
+.stage4_section .buttons_transition {
+  margin-top: 15px;
 }

@@ -79,7 +79,7 @@
                     <div class="calculator__block-flex">
                         <div class="calculator__block-select">
                             <select name="block-size" id="stage1-block-size" class="block-text select_size">
-                                <option class="block-text select-default" value="" hidden>Выберете размер блока</option>
+                                <!-- <option class="block-text select-default" value="" hidden>Выберете размер блока</option> -->
                                 <option class="block-text" value="standart">№1 Блок Стандартный 188*300*588мм</option>
                                 <option class="block-text" value="energy">№2 Блок Энергоэффективный 380*300*588мм</option>
                                 <option class="block-text" value="comfort">№3 Блок Комфорт 285*300*588мм</option>
@@ -986,7 +986,7 @@
     </div>
 </section>
 
-                <section class="calculator__stage" id="stage4">
+                <section class="calculator__stage stage4_section" id="stage4">
         <div class="export__menu">
             <button id="stage4-databtn" class="block-heading active">
                 <div>
@@ -1045,7 +1045,7 @@
                     </div>
                 </div>
                 <div class="export__block-imgwrapper">
-                    
+                    <img class="export__block-img" src="../img/blocks/storeroom.png" alt="">
                 </div>
             </section>
 
@@ -1066,7 +1066,7 @@
                     </div>
                 </div>
                 <div class="export__block-imgwrapper">
-                    
+                    <img class="export__block-img" src="../img/wallheight/05.png" alt="">  
                 </div>
             </section>
 
@@ -1087,7 +1087,7 @@
                     </div>
                 </div>
                 <div class="export__block-imgwrapper">
-                    
+                    <img class="export__block-img" src="../img/doorways/04.png" alt="">  
                 </div>
             </section>
 
@@ -1108,7 +1108,7 @@
                     </div>
                 </div>
                 <div class="export__block-imgwrapper">
-                    
+                    <img class="export__block-img" src="../img/fronts/09.png" alt=""> 
                 </div>
             </section>
 
@@ -1129,7 +1129,7 @@
                     </div>
                 </div>
                 <div class="export__block-imgwrapper">
-                    
+                    <img class="export__block-img" src="../img/trapezoidwindow/03.png" alt=""> 
                 </div>
             </section>
 
@@ -1150,7 +1150,7 @@
                     </div>
                 </div>
                 <div class="export__block-imgwrapper">
-                    
+                    <img class="export__block-img" src="../img/circlewindow/01.png" alt="">  
                 </div>
             </section>
 
@@ -1171,7 +1171,7 @@
                     </div>
                 </div>
                 <div class="export__block-imgwrapper">
-                    
+                    <img class="export__block-img" src="../img/glue/02.png" alt="">  
                 </div>
             </section>
 
@@ -1192,7 +1192,7 @@
                     </div>
                 </div>
                 <div class="export__block-imgwrapper">
-                    
+                    <img class="export__block-img hide_btn" src="../img/glue/03.png" alt="">    
                 </div>
             </section>
 
@@ -1213,7 +1213,7 @@
                     </div>
                 </div>
                 <div class="export__block-imgwrapper">
-                    
+                    <img class="export__block-img" src="../img/grid/02.png" alt="">   
                 </div>
             </section>
         </section>
@@ -1555,8 +1555,11 @@
                 </div>
             </div>
         </section>
-
-        <button id="generatepdf" class="calculator__stage-confirmbtn btn-text">Открыть / скачать PDF</button>
+        <div class="buttons_transition">
+            <button id="stage4-backmbtn" class="calculator__stage-backbtn btn-text">Назад</button>
+            <button id="sendmail" class="calculator__stage-sendmbtn btn-text">Отправить на Email</button>
+            <button id="generatepdf" class="calculator__stage-confirmbtn btn-text">Открыть / скачать PDF</button>
+        </div>
 </section>
                 
             </div>
