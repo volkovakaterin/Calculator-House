@@ -1192,7 +1192,7 @@ a {
 }
 
 .calculator__stage#stage4 .export-table.active {
-display: flex;
+  display: flex;
 }
 
 .calculator__stage#stage4 .export__menu {
@@ -1367,13 +1367,17 @@ display: flex;
   height: 30px;
 }
 
+.calculator__stage#stage4 .export-data .export__block-tablewrapper {
+  width: 77%;
+}
+
 .calculator__stage#stage4 .export-detal .export__block-tablewrapper,
 .calculator__stage#stage4 .export-tableexpanded .export__block-tablewrapper {
   width: 78%;
 }
 
 .calculator__stage#stage4 .export-table .export__block-tablewrapper {
-width: 83%;
+  width: 83%;
 }
 
 .calculator__stage#stage4 .export__block-imgwrapper {
@@ -1390,14 +1394,14 @@ width: 83%;
 }
 
 .calculator__stage#stage4 .export-detal .export__block-imgwrapper.active,
-.calculator__stage#stage4 .export-tableexpanded .export__block-imgwrapper.active  {
+.calculator__stage#stage4 .export-tableexpanded .export__block-imgwrapper.active {
   display: flex;
   margin-top: 40px;
   max-height: 120px;
   width: 22%;
 }
 
-.calculator__stage#stage4 .export-table .export__block-imgwrapper.active  {
+.calculator__stage#stage4 .export-table .export__block-imgwrapper.active {
   display: flex;
   margin-top: 40px;
   max-height: 120px;
@@ -1438,7 +1442,7 @@ width: 83%;
 .calculator__stage#stage4 .export-tableexpanded .export__block-img,
 .calculator__stage#stage4 .export-detal .export__block-img {
   max-width: 83%;
-    max-height: 100%;
+  max-height: 100%;
 }
 
 .calculator__stage#stage4 .export__block-wallheight .export__block-img {
