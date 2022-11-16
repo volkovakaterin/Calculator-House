@@ -836,6 +836,10 @@ form select {
   border: 1px solid #b9b9b9;
 }
 
+.calculator__block-number .empty_input {
+  border: 1px solid #d75547;
+}
+
 #stage1-trapezoidwindows-width,
 #stage1-trapezoidwindows-height-first,
 #stage1-trapezoidwindows-height-second {
