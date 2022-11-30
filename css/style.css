@@ -147,14 +147,21 @@ form select {
 }
 
 .calculator__block {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 79px;
 }
 
 .stage2_section .calculator__block-masonrygrid,
 .stage3_section .calculator__block-masonrygrid {
   margin-bottom: 70px;
+}
+
+.calculator__block-formwrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator__block-bgimg .calculator__block-formwrapper {
+  display: block;
 }
 
 .calculator__block-formwrapper .calculator__block-form .calculator__block-form-list li {
@@ -170,8 +177,8 @@ form select {
 .calculator__block-imgwrapper {
   display: flex;
   justify-content: center;
-  width: 50%;
-  margin-top: 36px;
+  width: 483px;
+  /* margin-top: 36px; */
   padding: 0;
 }
 
@@ -179,9 +186,9 @@ form select {
   margin-top: 0;
 }
 
-.calculator__block-bgimg {
+/* .calculator__block-bgimg {
   margin-bottom: 10px;
-}
+} */
 
 .stage2_section .calculator__block-bgimg {
   margin-bottom: 15px;
@@ -191,9 +198,9 @@ form select {
   margin-bottom: 18px;
 }
 
-.calculator__block-masonrygrid .calculator__block-imgwrapper {
+/* .calculator__block-masonrygrid .calculator__block-imgwrapper {
   margin-top: 25px;
-}
+} */
 
 .stage2_section .calculator__block-masonrygrid .calculator__block-imgwrapper,
 .stage3_section .calculator__block-masonrygrid .calculator__block-imgwrapper {
@@ -259,8 +266,8 @@ form select {
 
 
 .calculator__block-imgwrapper .calculator__block-imgbox.active {
-  width: 418px;
-  height: 240px;
+  width: 420px;
+  /* height: 240px; */
   padding: 10px 25px 10px 25px;
   display: flex;
   justify-content: center;
@@ -269,10 +276,15 @@ form select {
   opacity: 100%;
 }
 
+.calculator__block-masonrygrid .calculator__block-imgwrapper .calculator__block-imgbox.active {
+  box-shadow: none;
+  padding: 0;
+}
+
 .calculator__block-imgwrapper .calculator__block-imgbox.default {
-  width: 418px;
-  height: 240px;
-  padding: 10px 25px 10px 25px;
+  /* width: 418px; */
+  /* height: 240px; */
+  /* padding: 10px 25px 10px 25px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,18 +292,17 @@ form select {
 }
 
 .calculator__block-imgwrapper .calculator__block-imgbox.blur {
-  width: 418px;
-  height: 240px;
-  padding: 10px 25px 10px 25px;
+  /* width: 320px; */
+  height: 198px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 75%;
 }
 
-.calculator__block-blockparams .calculator__block-imgwrapper .calculator__block-imgbox.blur,
 .calculator__block-blockparams .calculator__block-imgwrapper .calculator__block-imgbox.active {
-  padding: 10px 35px 10px 55px;
+  padding: 10px 35px;
 }
 
 .calculator__block-circlewindows .calculator__block-imgwrapper {
@@ -299,7 +310,8 @@ form select {
 }
 
 .calculator__block-bgimg .calculator__block-imgwrapper {
-  margin-left: 220px;
+  /* margin-left: 220px; */
+  margin-top: 36px;
 }
 
 .calculator__block-imgwrapper img {
@@ -355,7 +367,12 @@ form select {
 }
 
 .calculator__block-additionally.active .calculator__block {
+  display: block;
+}
+
+.calculator__block-additionally.active .calculator__block-bgimg {
   display: flex;
+  justify-content: space-between;
 }
 
 .calculator__block-additionally.active .calculator__block-additionallyheading::after {
@@ -383,9 +400,9 @@ form select {
 }
 
 
-.calculator__block-blockparams .calculator__block-form {
+/* .calculator__block-blockparams .calculator__block-form {
   margin-bottom: 28px;
-}
+} */
 
 .no-webp .calculator__block-wallheight .calculator__block-heading::before {
   background-image: url("../img/house-plan.png");
@@ -424,17 +441,17 @@ form select {
   margin-right: 29px;
 }
 
-.calculator__block-wallheight .calculator__block-form {
+/* .calculator__block-wallheight .calculator__block-form {
   margin-bottom: 28px;
-}
+} */
 
 .calculator__block-wallheight .calculator__block-formsubmit button {
   width: 165px;
 }
 
-.calculator__block-doorways {
+/* .calculator__block-doorways {
   margin-bottom: 26px;
-}
+} */
 
 .no-webp .calculator__block-doorways .calculator__block-heading::before {
   background-image: url("../img/window.png");
@@ -460,9 +477,9 @@ form select {
   width: 160px;
 }
 
-.calculator__block-fronts {
+/* .calculator__block-fronts {
   margin-bottom: 90px;
-}
+} */
 
 .no-webp .calculator__block-fronts .calculator__block-heading::before {
   background-image: url("../img/joist.png");
@@ -523,9 +540,9 @@ form select {
   width: 165px;
 }
 
-.calculator__block-circlewindows {
+/* .calculator__block-circlewindows {
   margin-bottom: 68px;
-}
+} */
 
 .no-webp .calculator__block-circlewindows .calculator__block-heading::before {
   background-image: url("../img/circlewindows.png");
@@ -539,9 +556,9 @@ form select {
   width: 120px;
 }
 
-.calculator__block-circlewindows .calculator__block-flex {
+/* .calculator__block-circlewindows .calculator__block-flex {
   margin-left: 10px;
-}
+} */
 
 .calculator__block-circlewindows .calculator__block-flex>*:not(:last-child) {
   margin-right: 30px;
@@ -556,7 +573,7 @@ form select {
 }
 
 .calculator__block-glue {
-  margin-bottom: 29px;
+  margin-bottom: 79px;
 }
 
 .stage2_section .calculator__block-glue {
@@ -571,9 +588,9 @@ form select {
   background-image: url("../img/trowel.png");
 }
 
-.calculator__block-foamglue {
+/* .calculator__block-foamglue {
   margin-bottom: 114px;
-}
+} */
 
 .no-webp .calculator__block-foamglue .calculator__block-heading::before {
   background-image: url("../img/foamglue.png");
