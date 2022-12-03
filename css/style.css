@@ -150,11 +150,6 @@ form select {
   margin-bottom: 79px;
 }
 
-.stage2_section .calculator__block-masonrygrid,
-.stage3_section .calculator__block-masonrygrid {
-  margin-bottom: 70px;
-}
-
 .calculator__block-formwrapper {
   display: flex;
   justify-content: space-between;
@@ -178,33 +173,11 @@ form select {
   display: flex;
   justify-content: center;
   width: 483px;
-  /* margin-top: 36px; */
   padding: 0;
 }
 
 .calculator__block-circlewindows .calculator__block-imgwrapper {
   margin-top: 0;
-}
-
-/* .calculator__block-bgimg {
-  margin-bottom: 10px;
-} */
-
-.stage2_section .calculator__block-bgimg {
-  margin-bottom: 15px;
-}
-
-.stage3_section .calculator__block-bgimg {
-  margin-bottom: 18px;
-}
-
-/* .calculator__block-masonrygrid .calculator__block-imgwrapper {
-  margin-top: 25px;
-} */
-
-.stage2_section .calculator__block-masonrygrid .calculator__block-imgwrapper,
-.stage3_section .calculator__block-masonrygrid .calculator__block-imgwrapper {
-  margin-top: 40px;
 }
 
 .calculator__block-imgwrapper button {
@@ -258,16 +231,13 @@ form select {
   background: none;
 }
 
-
-
 .calculator__block-imgwrapper .calculator__block-imgbox {
   display: none;
 }
 
-
 .calculator__block-imgwrapper .calculator__block-imgbox.active {
   width: 420px;
-  /* height: 240px; */
+  height: 240px;
   padding: 10px 25px 10px 25px;
   display: flex;
   justify-content: center;
@@ -282,9 +252,6 @@ form select {
 }
 
 .calculator__block-imgwrapper .calculator__block-imgbox.default {
-  /* width: 418px; */
-  /* height: 240px; */
-  /* padding: 10px 25px 10px 25px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,7 +259,6 @@ form select {
 }
 
 .calculator__block-imgwrapper .calculator__block-imgbox.blur {
-  /* width: 320px; */
   height: 198px;
   padding: 0;
   display: flex;
@@ -310,7 +276,6 @@ form select {
 }
 
 .calculator__block-bgimg .calculator__block-imgwrapper {
-  /* margin-left: 220px; */
   margin-top: 36px;
 }
 
@@ -338,13 +303,14 @@ form select {
 .calculator__block-additionally .calculator__block-additionallyheading {
   display: flex;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .calculator__block-additionally .calculator__block-additionallyheading button {
   position: relative;
   border: none;
   background: none;
-  cursor: pointer;
+  font-weight: 600;
 }
 
 .calculator__block-additionally .calculator__block-additionallyheading button::before {
@@ -359,7 +325,6 @@ form select {
 .calculator__block-additionally .calculator__block-additionallyheading::after {
   margin-left: 20px;
   content: url("../img/arrow-up.png");
-  transform: rotate(180deg);
 }
 
 .calculator__block-additionally .calculator__block {
@@ -376,7 +341,7 @@ form select {
 }
 
 .calculator__block-additionally.active .calculator__block-additionallyheading::after {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 
 .no-webp .calculator__block-blockparams .calculator__block-heading::before {
@@ -576,14 +541,6 @@ form select {
   margin-bottom: 79px;
 }
 
-.stage2_section .calculator__block-glue {
-  margin-bottom: 23px;
-}
-
-.stage3_section .calculator__block-glue {
-  margin-bottom: 24px;
-}
-
 .no-webp .calculator__block-glue .calculator__block-heading::before {
   background-image: url("../img/trowel.png");
 }
@@ -773,7 +730,7 @@ form select {
   display: block;
   content: "!";
   background-color: #f4d433;
-  min-height: 10px;
+  height: 10px;
   min-width: 10px;
   text-align: center;
   color: #fff;
@@ -816,31 +773,62 @@ form select {
   margin-right: 29px;
 }
 
-/* .calculator__block-radio-section input {
+.custom-radio, .custom-checkbox, .table-custom-checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.calculator__block-radio-section input+label {
+.custom-radio+label, .custom-checkbox+label, .table-custom-checkbox+label {
+  position: relative;
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.calculator__block-radio-section input+label::before {
+.custom-radio+label::before, .custom-checkbox+label::before, .table-custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 17px;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #b9b9b9;
+  background-image: url("../img/Rectangle\ 151.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover;  */
+}
+
+.custom-radio:checked+label::after, .custom-checkbox:checked+label::after, .table-custom-checkbox:checked+label::after {
+  position: absolute;
+  left: 1px;
   content: '';
   display: inline-block;
   flex-shrink: 0;
   flex-grow: 0;
   margin-right: 17px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #b9b9b9;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/down-arrow\ 1.svg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
-} */
+  background-position: center;
+  background-size: cover;
+}
+
+.table-custom-checkbox+label::before, .table-custom-checkbox:checked+label::after {
+  margin-right: 2px;
+}
+
+.table-custom-checkbox+label::before, .table-custom-checkbox:checked+label::after {
+  visibility: hidden;
+}
+
+.table-custom-checkbox.show+label::before, .table-custom-checkbox.show:checked+label::after {
+  visibility: visible;
+}
 
 .calculator__block-form p.stock-cuttings {
   margin-bottom: 8px;
@@ -1306,6 +1294,20 @@ a {
   font-size: 33px;
   font-family: Arial;
   margin-right: 10px;
+}
+
+.calculator__stage#stage4 .export__menu>#stage4-databtn::after,
+.calculator__stage#stage4 .export__menu #stage4-shortcalcbtn::after,
+.calculator__stage#stage4 .export__menu #stage4-detalcalcbtn::after {
+  margin-left: 10px;
+  margin-top: -8px;
+  content: url(../img/arrow-up.png);
+}
+
+.calculator__stage#stage4 .export__menu>#stage4-databtn.active::after,
+.calculator__stage#stage4 .export__menu #stage4-shortcalcbtn.active::after,
+.calculator__stage#stage4 .export__menu #stage4-detalcalcbtn.active::after {
+  transform: rotate(180deg);
 }
 
 .calculator__stage#stage4 .export__menu>#stage4-databtn.active,

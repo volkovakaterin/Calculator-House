@@ -34,7 +34,7 @@
                 <div class="calculator__menu-item first active">
                     <a href="#stage1">
                         <p class="menu-paragraph">Наружные несущие стены</p>
-                        <div class="menu-number">1</div>
+                        <div class="menu-number active">1</div>
                     </a>
                 </div>
                 <div class="calculator__menu-item second">
@@ -101,11 +101,11 @@
                     <p class="block-text" for="">Расположение блока</p>
                     <div class="calculator__block-radio">
                         <div class="calculator__block-radio-section">
-                            <input type="radio" name="stage1-block-align" id="stage1-block-align-vert">
+                            <input class="custom-radio" type="radio" name="stage1-block-align" id="stage1-block-align-vert">
                             <label class="block-text" for="stage1-block-align-vert">Вертикально</label>
                         </div>
                         <div class="calculator__block-radio-section">
-                            <input type="radio" name="stage1-block-align" id="stage1-block-align-hor" checked>
+                            <input class="custom-radio" type="radio" name="stage1-block-align" id="stage1-block-align-hor" checked>
                             <label class="block-text" for="stage1-block-align-hor">Горизонтально</label>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
                             </select>
                         </div>
                         <div class="calculator__block-checkbox">
-                            <input type="checkbox" name="stage1-fit-to-block-height" id="stage1-fit-to-block-height">
+                            <input class="custom-checkbox" type="checkbox" name="stage1-fit-to-block-height" id="stage1-fit-to-block-height">
                             <label class="block-text" for="stage1-fit-to-block-height">Подогнать по высоте блока</label>
                         </div>
                     </div>
@@ -212,11 +212,11 @@
                             <button id="doorWays-submit" class="btn-text-lowercase">Добавить проем</button>
                         </div>
                         <div class="calculator__block-checkbox">
-                            <input type="checkbox" name="stage1-doorway-jumper" id="stage1-doorway-jumper">
+                            <input class="custom-checkbox" type="checkbox" name="stage1-doorway-jumper" id="stage1-doorway-jumper">
                             <label class="block-text" for="stage1-doorway-jumper">Добавить перемычку</label>
                         </div>
                         <div class="calculator__block-checkbox">
-                            <input type="checkbox" name="stage1-doorway-windowjumper" id="stage1-doorway-windowjumper">
+                            <input class="custom-checkbox" type="checkbox" name="stage1-doorway-windowjumper" id="stage1-doorway-windowjumper">
                             <label class="block-text" for="stage1-doorway-windowjumper">Добавить подоконную перемычку</label>
                         </div>
                     </div>
@@ -333,11 +333,11 @@
                                 <button id="trapezoidwindows-submit" class="btn-text-lowercase">Добавить окно</button>
                             </div>
                             <div class="calculator__block-checkbox">
-                                <input type="checkbox" name="stage1-trapezoidWindows-jumper" id="stage1-trapezoidWindows-jumper">
+                                <input class="custom-checkbox" type="checkbox" name="stage1-trapezoidWindows-jumper" id="stage1-trapezoidWindows-jumper">
                                 <label class="block-text trapezoidWindows-jumper_label" for="stage1-trapezoidWindows-jumper">Добавить перемычку</label>
                             </div>
                             <div class="calculator__block-checkbox">
-                                <input type="checkbox" name="stage1-trapezoidWindows-windowjumper" id="stage1-trapezoidWindows-windowjumper">
+                                <input class="custom-checkbox" type="checkbox" name="stage1-trapezoidWindows-windowjumper" id="stage1-trapezoidWindows-windowjumper">
                                 <label class="block-text" for="stage1-trapezoidWindows-windowjumper">Добавить подоконную перемычку</label>
                             </div>
                         </div>
@@ -394,7 +394,7 @@
                                 <button id="circleWindows-submit" class="btn-text-lowercase">Добавить окно</button>
                             </div>
                             <div class="calculator__block-checkbox">
-                                <input type="checkbox" name="stage1-circleWindows-jumper" id="stage1-circleWindows-jumper">
+                                <input class="custom-checkbox" type="checkbox" name="stage1-circleWindows-jumper" id="stage1-circleWindows-jumper">
                                 <label class="block-text" for="stage1-circleWindows-jumper">Добавить перемычку</label>
                             </div>
                         </div>
@@ -416,15 +416,15 @@
 
         <div class="calculator__block calculator__block-bgimg">
             <div class="calculator__block-formwrapper">
-                <section class="calculator__block-glue">
-                    <div class="calculator__block-heading">
+                <div class="calculator__block-heading">
                         <h3 class="block-heading">Клей</h3>
                     </div>
+                <section class="calculator__block-glue">
                     <form class="calculator__block-form" action="">
                         <div class="calculator__block-wrapper">
                             <p class="menu-title">Добавить к рассчёту клей для кладки блока</p>
                             <div class="calculator__block-checkbox">
-                                <input type="checkbox" name="stage1-glue" id="stage1-glue">
+                                <input class="custom-checkbox" type="checkbox" name="stage1-glue" id="stage1-glue">
                                 <label class="block-text" for="stage1-glue">Добавить</label>
                             </div>
                         </div>
@@ -439,13 +439,13 @@
                         <div class="calculator__block-wrapper">
                             <p class="menu-title">Добавить к рассчёту пена-клей для кладки блока</p>
                             <div class="calculator__block-checkbox">
-                                <input type="checkbox" name="stage1-foam-glue" id="stage1-foam-glue">
+                                <input class="custom-checkbox" type="checkbox" name="stage1-foam-glue" id="stage1-foam-glue">
                                 <label class="block-text" for="stage1-foam-glue">Добавить</label>
                             </div>
                         </div>
                     </form>
                 </section>
-            </div>
+            </div> 
             <div class="calculator__block-imgwrapper">
                 <button class="calculator__block-imgwrapperbtnleft"></button>
                 <div class="calculator__block-imgbox">
@@ -455,7 +455,7 @@
                     <img class="default" src="img/glue/img.png" alt="wall">
                 </div>
                 <button class="calculator__block-imgwrapperbtnright"></button>
-            </div>
+            </div>  
         </div>
         
         <section class="calculator__block calculator__block-masonrygrid">
@@ -467,7 +467,7 @@
                     <div class="calculator__block-wrapper">
                         <p class="menu-title">Добавить к рассчёту кладочную сетку</p>
                         <div class="calculator__block-checkbox">
-                            <input type="checkbox" name="stage1-masonrygrid" id="stage1-masonrygrid">
+                            <input class="custom-checkbox" type="checkbox" name="stage1-masonrygrid" id="stage1-masonrygrid">
                             <label class="block-text" for="stage1-masonrygrid">Добавить</label>
                         </div>
                     </div>
@@ -497,10 +497,10 @@
     </div>
     
     <section class="calculator__block calculator__block-blockparams">
-        <div class="calculator__block-formwrapper" >
-            <div class="calculator__block-heading">
+        <div class="calculator__block-heading">
                 <h3 class="block-heading">Выберите параметры блока</h3>
             </div>
+        <div class="calculator__block-formwrapper" >
             <form class="calculator__block-form" action="#">
                 <div class="calculator__block-wrapper">
                     <p class="calculator__block-text block-text">Размер блока</p>
@@ -528,11 +528,11 @@
                     <p class="block-text" for="">Расположение блока</p>
                     <div class="calculator__block-radio">
                         <div class="calculator__block-radio-section">
-                            <input type="radio" name="stage2-block-align" id="stage2-block-align-vert">
+                            <input class="custom-radio" type="radio" name="stage2-block-align" id="stage2-block-align-vert">
                             <label class="block-text" for="stage2-block-align-vert">Вертикально</label>
                         </div>
                         <div class="calculator__block-radio-section">
-                            <input type="radio" name="stage2-block-align" id="stage2-block-align-hor" checked>
+                            <input class="custom-radio" type="radio" name="stage2-block-align" id="stage2-block-align-hor" checked>
                             <label class="block-text" for="stage2-block-align-hor">Горизонтально</label>
                         </div>
                     </div>
@@ -544,8 +544,7 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <div class="calculator__block-imgwrapper">
+           <div class="calculator__block-imgwrapper">
             <div class="calculator__block-imgbox">
                 <img src="img/blocks/standart.png" alt="brick">
                 <img src="img/blocks/energy.png" alt="brick">
@@ -554,14 +553,15 @@
                 <img src="img/blocks/comfortPlusBrick.png" alt="brick">
                 <img src="img/blocks/comfortTempPlusBrick.png" alt="brick">
             </div>
+        </div> 
         </div>
     </section>
 
     <section class="calculator__block calculator__block-wallheight">
-        <div class="calculator__block-formwrapper">
-            <div class="calculator__block-heading">
+        <div class="calculator__block-heading">
                 <h3 class="block-heading">Введите размер стен</h3>
             </div>
+        <div class="calculator__block-formwrapper">
             <form action="#" class="calculator__block-form">
                 <ul class="calculator__block-form-list menu-title">
                 </ul>
@@ -580,7 +580,7 @@
                             </select>
                         </div>
                         <div class="calculator__block-checkbox">
-                            <input type="checkbox" name="stage2-fit-to-block-height" id="stage2-fit-to-block-height">
+                            <input class="custom-checkbox" type="checkbox" name="stage2-fit-to-block-height" id="stage2-fit-to-block-height">
                             <label class="block-text" for="stage2-fit-to-block-height">Подогнать по высоте блока</label>
                         </div>
                     </div>
@@ -594,8 +594,7 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <div class="calculator__block-imgwrapper">
+            <div class="calculator__block-imgwrapper">
             <button class="calculator__block-imgwrapperbtnleft"></button>
             <div class="calculator__block-imgbox">
                 <img src="img/wallheight/01.png" alt="wall">
@@ -607,13 +606,14 @@
             </div>
             <button class="calculator__block-imgwrapperbtnright"></button>
         </div>
+        </div>
     </section>
 
     <section class="calculator__block calculator__block-doorways">
-        <div class="calculator__block-formwrapper">
-            <div class="calculator__block-heading">
+       <div class="calculator__block-heading">
                 <h3 class="block-heading">Укажите размеры Межкомнатных дверных проемов</h3>
             </div>
+        <div class="calculator__block-formwrapper">
             <form action="#" class="calculator__block-form">
                 <ul class="calculator__block-form-list menu-title">
                 </ul>
@@ -641,8 +641,7 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <div class="calculator__block-imgwrapper">
+           <div class="calculator__block-imgwrapper">
             <button class="calculator__block-imgwrapperbtnleft"></button>
             <div class="calculator__block-imgbox">
                 <img src="img/doorways/01.png" alt="wall">
@@ -658,6 +657,7 @@
                 <img class="default" src="img/doorways/img.png" alt="wall">
             </div>
             <button class="calculator__block-imgwrapperbtnright"></button>
+        </div> 
         </div>
     </section>
 
@@ -675,7 +675,7 @@
                         <div class="calculator__block-wrapper">
                             <p class="menu-title">Добавить к рассчёту клей для кладки блока</p>
                             <div class="calculator__block-checkbox">
-                                <input type="checkbox" name="stage2-glue" id="stage2-glue">
+                                <input class="custom-checkbox" type="checkbox" name="stage2-glue" id="stage2-glue">
                                 <label class="block-text" for="stage2-glue">Добавить</label>
                             </div>
                         </div>
@@ -690,7 +690,7 @@
                         <div class="calculator__block-wrapper">
                             <p class="menu-title">Добавить к рассчёту пена-клей для кладки блока</p>
                             <div class="calculator__block-checkbox">
-                                <input type="checkbox" name="stage2-foam-glue" id="stage2-foam-glue">
+                                <input class="custom-checkbox" type="checkbox" name="stage2-foam-glue" id="stage2-foam-glue">
                                 <label class="block-text" for="stage2-foam-glue">Добавить</label>
                             </div>
                         </div>
@@ -710,21 +710,20 @@
         </div>
         
         <section class="calculator__block calculator__block-masonrygrid">
-            <div class="calculator__block-formwrapper">
-                <div class="calculator__block-heading">
+            <div class="calculator__block-heading">
                     <h3 class="block-heading">Кладочная сетка</h3>
                 </div>
+            <div class="calculator__block-formwrapper">
                 <form class="calculator__block-form" action="">
                     <div class="calculator__block-wrapper">
                         <p class="menu-title">Добавить к рассчёту кладочную сетку</p>
                         <div class="calculator__block-checkbox">
-                            <input type="checkbox" name="stage2-masonrygrid" id="stage2-masonrygrid">
+                            <input class="custom-checkbox" type="checkbox" name="stage2-masonrygrid" id="stage2-masonrygrid">
                             <label class="block-text" for="stage2-masonrygrid">Добавить</label>
                         </div>
                     </div>
                 </form>
-            </div>
-            <div class="calculator__block-imgwrapper">
+              <div class="calculator__block-imgwrapper">
                 <button class="calculator__block-imgwrapperbtnleft"></button>
                 <div class="calculator__block-imgbox">
                     <img src="img/grid/01.png" alt="wall">
@@ -732,6 +731,7 @@
                     <img class="default" src="img/grid/img.png" alt="wall">
                 </div>
                 <button class="calculator__block-imgwrapperbtnright"></button>
+            </div>  
             </div>
         </section>
     </section>
@@ -748,10 +748,10 @@
     </div>
 
     <section class="calculator__block calculator__block-blockparams">
-        <div class="calculator__block-formwrapper" >
-            <div class="calculator__block-heading">
+        <div class="calculator__block-heading">
                 <h3 class="block-heading">Выберите параметры блока</h3>
             </div>
+        <div class="calculator__block-formwrapper" >
             <form class="calculator__block-form" action="#">
                 <div class="calculator__block-wrapper">
                     <p class="calculator__block-text block-text">Размер блока</p>
@@ -776,11 +776,11 @@
                     <p class="block-text" for="">Расположение блока</p>
                     <div class="calculator__block-radio">
                         <div class="calculator__block-radio-section">
-                            <input type="radio" name="stage3-block-align" id="stage3-block-align-vert">
+                            <input class="custom-radio" type="radio" name="stage3-block-align" id="stage3-block-align-vert">
                             <label class="block-text" for="stage3-block-align-vert">Вертикально</label>
                         </div>
                         <div class="calculator__block-radio-section">
-                            <input type="radio" name="stage3-block-align" id="stage3-block-align-hor" checked>
+                            <input class="custom-radio" type="radio" name="stage3-block-align" id="stage3-block-align-hor" checked>
                             <label class="block-text" for="stage3-block-align-hor">Горизонтально</label>
                         </div>
                     </div>
@@ -792,21 +792,21 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <div class="calculator__block-imgwrapper">
+            <div class="calculator__block-imgwrapper">
             <div class="calculator__block-imgbox">
                 <img src="img/blocks/luxe.png" alt="brick">
                 <img src="img/blocks/stage3comfort.png" alt="brick">
                 <img src="img/blocks/storeroom.png" alt="brick">
             </div>
         </div>
+        </div> 
     </section>
 
     <section class="calculator__block calculator__block-wallheight">
-        <div class="calculator__block-formwrapper">
-            <div class="calculator__block-heading">
+        <div class="calculator__block-heading">
                 <h3 class="block-heading">Введите размер стен</h3>
             </div>
+        <div class="calculator__block-formwrapper">
             <form action="#" class="calculator__block-form">
                 <ul class="calculator__block-form-list menu-title">
                 </ul>
@@ -825,7 +825,7 @@
                             </select>
                         </div>
                         <div class="calculator__block-checkbox">
-                            <input type="checkbox" name="stage3-fit-to-block-height" id="stage3-fit-to-block-height">
+                            <input class="custom-checkbox" type="checkbox" name="stage3-fit-to-block-height" id="stage3-fit-to-block-height">
                             <label class="block-text" for="stage3-fit-to-block-height">Подогнать по высоте блока</label>
                         </div>
                     </div>
@@ -839,8 +839,7 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <div class="calculator__block-imgwrapper">
+           <div class="calculator__block-imgwrapper">
             <button class="calculator__block-imgwrapperbtnleft"></button>
             <div class="calculator__block-imgbox">
                 <img src="img/wallheight/01.png" alt="wall">
@@ -851,14 +850,15 @@
                 <img class="default" src="img/wallheight/img.png" alt="wall">
             </div>
             <button class="calculator__block-imgwrapperbtnright"></button>
+        </div> 
         </div>
     </section>
 
     <section class="calculator__block calculator__block-doorways">
-        <div class="calculator__block-formwrapper">
-            <div class="calculator__block-heading">
+        <div class="calculator__block-heading">
                 <h3 class="block-heading">Укажите размеры Межкомнатных дверных проемов</h3>
             </div>
+        <div class="calculator__block-formwrapper">
             <form action="#" class="calculator__block-form">
                 <ul class="calculator__block-form-list menu-title">
                 </ul>
@@ -886,8 +886,7 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <div class="calculator__block-imgwrapper">
+            <div class="calculator__block-imgwrapper">
             <button class="calculator__block-imgwrapperbtnleft"></button>
             <div class="calculator__block-imgbox">
                 <img src="img/doorways/01.png" alt="wall">
@@ -903,6 +902,7 @@
                 <img class="default" src="img/doorways/img.png" alt="wall">
             </div>
             <button class="calculator__block-imgwrapperbtnright"></button>
+        </div>
         </div>
     </section>
 
@@ -920,7 +920,7 @@
                         <div class="calculator__block-wrapper">
                             <p class="menu-title">Добавить к рассчёту клей для кладки блока</p>
                             <div class="calculator__block-checkbox">
-                                <input type="checkbox" name="stage3-glue" id="stage3-glue">
+                                <input class="custom-checkbox" type="checkbox" name="stage3-glue" id="stage3-glue">
                                 <label class="block-text" for="stage3-glue">Добавить</label>
                             </div>
                         </div>
@@ -935,7 +935,7 @@
                         <div class="calculator__block-wrapper">
                             <p class="menu-title">Добавить к рассчёту пена-клей для кладки блока</p>
                             <div class="calculator__block-checkbox">
-                                <input type="checkbox" name="stage3-foam-glue" id="stage3-foam-glue">
+                                <input class="custom-checkbox" type="checkbox" name="stage3-foam-glue" id="stage3-foam-glue">
                                 <label class="block-text" for="stage3-foam-glue">Добавить</label>
                             </div>
                         </div>
@@ -955,21 +955,20 @@
         </div>
         
         <section class="calculator__block calculator__block-masonrygrid">
-            <div class="calculator__block-formwrapper">
-                <div class="calculator__block-heading">
+            <div class="calculator__block-heading">
                     <h3 class="block-heading">Кладочная сетка</h3>
                 </div>
+            <div class="calculator__block-formwrapper">
                 <form class="calculator__block-form" action="">
                     <div class="calculator__block-wrapper">
                         <p class="menu-title">Добавить к рассчёту кладочную сетку</p>
                         <div class="calculator__block-checkbox">
-                            <input type="checkbox" name="stage3-masonrygrid" id="stage3-masonrygrid">
+                            <input class="custom-checkbox" type="checkbox" name="stage3-masonrygrid" id="stage3-masonrygrid">
                             <label class="block-text" for="stage3-masonrygrid">Добавить</label>
                         </div>
                     </div>
                 </form>
-            </div>
-            <div class="calculator__block-imgwrapper">
+                <div class="calculator__block-imgwrapper">
                 <button class="calculator__block-imgwrapperbtnleft"></button>
                 <div class="calculator__block-imgbox">
                     <img src="img/grid/01.png" alt="wall">
@@ -977,6 +976,7 @@
                     <img class="default" src="img/grid/img.png" alt="wall">
                 </div>
                 <button class="calculator__block-imgwrapperbtnright"></button>
+            </div>
             </div>
         </section>
     </section>
@@ -1163,9 +1163,9 @@
                         <table class="table-text">
                             <tr>
                                 <td>Учесть в расчете</td>
-                                <td><input type="checkbox"></td>
-                                <td><input type="checkbox"></td>
-                                <td><input type="checkbox"></td>
+                                <td><input class="custom-checkbox" type="checkbox"></td>
+                                <td><input class="custom-checkbox" type="checkbox"></td>
+                                <td><input class="custom-checkbox" type="checkbox"></td>
                             </tr>
                         </table>
                     </div>
@@ -1184,9 +1184,9 @@
                         <table class="table-text">
                             <tr>
                                 <td>Учесть в расчете</td>
-                                <td><input type="checkbox"></td>
-                                <td><input type="checkbox"></td>
-                                <td><input type="checkbox"></td>
+                                <td><input class="custom-checkbox" type="checkbox"></td>
+                                <td><input class="custom-checkbox" type="checkbox"></td>
+                                <td><input class="custom-checkbox" type="checkbox"></td>
                             </tr>
                         </table>
                     </div>
@@ -1205,9 +1205,9 @@
                         <table class="table-text">
                             <tr>
                                 <td>Учесть в расчете</td>
-                                <td><input type="checkbox"></td>
-                                <td><input type="checkbox"></td>
-                                <td><input type="checkbox"></td>
+                                <td><input class="custom-checkbox" type="checkbox"></td>
+                                <td><input class="custom-checkbox" type="checkbox"></td>
+                                <td><input class="custom-checkbox" type="checkbox"></td>
                             </tr>
                         </table>
                     </div>
